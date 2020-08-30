@@ -16,6 +16,9 @@ h1 {
     color: #fff;
     font-size: 2em;
     width: 100%;
+    font-family: Georgia;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -26,6 +29,8 @@ h2 {
     line-height: 24px;
     padding-bottom: 30px;
     text-align: left;
+    font-family: Georgia;
+    text-transform: capitalize;
 }
 
 p {
@@ -33,12 +38,19 @@ p {
     line-height: 1.3em;
     text-align: left;
     width: 100%;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+p::first-line{
+    font-weight: bold;
 }
 
 .image {
     background-size: cover;
     background-position: center;
     height: 300px;
+    background-image: url("../img/background-img.jpg");
 }
 
 .caption {
@@ -51,5 +63,14 @@ p {
     position: relative;
     top: 80%;
     width: 60%;
+    background-color: white;
+    color: black;
+    opacity: 0.75;
+    font-style: oblique;
+}
+
+.caption a:hover{
+    text-decoration: none;
+    color: purple;
 }
 
